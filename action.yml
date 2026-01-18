@@ -1,4 +1,4 @@
-name: 'Autocoder Bot Action'
+name: 'AutoCoder'
 description: 'Generates code from GitHub Issues using OpenAI and creates a Pull Request'
 author: 'autocoder-bot'
 
