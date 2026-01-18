@@ -22,7 +22,7 @@ jobs:
         env:
           OPENAI_API_KEY: ${{ secrets.OPENAI_API_KEY }}
         run: |
-          ./script.sh \
+          ./scripts/script.sh \
           "${{ secrets.GITHUB_TOKEN }}" \
           "${{ github.repository }}" \
           "${{ github.event.issue.number }}" \
