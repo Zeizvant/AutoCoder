@@ -7,9 +7,16 @@ on:
 jobs:
   autocoder_job:
     runs-on: ubuntu-latest
+    # ADD THESE PERMISSIONS HERE
+    permissions:
+      contents: write
+      pull-requests: write
+
     steps:
       - name: Checkout the repository
         uses: actions/checkout@v4
+        with:
+          token: ${{ secrets.GITHUB_TOKEN }}
 
       - name: Interact with ChatGPT
         uses: Zeizvant/AutoCoder@main 
